@@ -1,0 +1,31 @@
+[package]
+name = "figaro-contract"
+authors = ["Bela Supernova <bsn.si>", "Anton Shramko <antonshramko@yandex.ru>"]
+license = "Apache-2.0"
+version = "0.1.0"
+edition = "2021"
+
+[lib]
+crate-type = ["cdylib", "rlib"]
+
+[features]
+# for more explicit tests, cargo test --features=backtraces
+backtraces = ["cosmwasm-std/backtraces"]
+
+[dependencies]
+serde = { version = "1.0.143", default-features = false, features = ["derive"] }
+sha2 = { version = "0.10.2", default-features = false }
+hex = { version = "0.4.3", default-features = false }
+thiserror = { version = "1.0.32" }
+cw-storage-plus = "0.14.0"
+cosmwasm-std = "1.0.0"
+schemars = "0.8.10"
+cw-asset = "2.2.0"
+cw20 = "0.14.0"
+cw2 = "0.14.0"
+
+[dev-dependencies]
+cosmwasm-schema = "1.0.0"
+cw-multi-test = "0.13.4"
+derivative = "2"
+anyhow = "1"

@@ -1,0 +1,6 @@
+imports_layout = "HorizontalVertical"
+newline_style = "unix"
+reorder_imports = false
+hard_tabs = false
+tab_spaces = 2
+max_width = 80
