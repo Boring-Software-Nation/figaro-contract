@@ -22,6 +22,7 @@ pub struct Direction {
 pub struct LocationsResponse {
   pub exact: Direction,
   pub rough: Direction,
+  pub comment: String,
 }
 
 pub fn query_get_status(deps: Deps) -> StdResult<Status> {
@@ -55,11 +56,16 @@ pub fn query_get_locations(deps: Deps) -> StdResult<LocationsResponse> {
   let rough_from = ROUGH_FROM_LOCATION.load(deps.storage)?;
   let rough_to = ROUGH_TO_LOCATION.load(deps.storage)?;
 
+  let comment = COMMENT.may_load(deps.storage)?;
+
   Ok(LocationsResponse {
+    comment: comment.unwrap_or_default(),
+
     exact: Direction {
       from: exact_from.unwrap_or_default(),
       to: exact_to.unwrap_or_default(),
     },
+    
     rough: Direction {
       from: rough_from,
       to: rough_to,
