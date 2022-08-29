@@ -14,7 +14,7 @@ With this contract you can create a delivery request worth an amount of tokens b
 
 ## Design and features
 * The contract works on the principle of mutual deposit.
-* Verification is based on a signature with a secp256k1 secret key, which a sender gives to the recipient who receives the package.
+* Verification is based on a signature with a `secp256k1` secret key, which a sender gives to the recipient who receives the package.
 * None of the parties can withdraw the deposit before the contract terms execution, or an expiration of obligations.
 
 ## How to
