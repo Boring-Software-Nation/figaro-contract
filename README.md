@@ -12,6 +12,9 @@ This is a  <a href="https://github.com/CosmWasm/cosmwasm">CosmWasm!</a> smartcon
 With this contract you can create a delivery request worth an amount of tokens based on cw20 for Cosmos blockchain users.
 </p>
 
+## Related repositories
+- Figaro [CLI test tool](https://github.com/bsn-si/figaro-cli)
+
 ## Design and features
 * The contract works on the principle of mutual deposit.
 * Verification is based on a signature with a `secp256k1` secret key, which a sender gives to the recipient who receives the package.
