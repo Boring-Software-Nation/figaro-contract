@@ -10,6 +10,8 @@
 
 ### Features test example:
 
+Here's the video of the installation and testing process:
+
 [<img width="406" alt="Untitled" src="https://user-images.githubusercontent.com/98888366/188181026-5299addc-cb9b-412f-8ec9-c15d210f6115.png">](https://media.bsn.si/ipehr/figaro_install_and_using_tests.mp4)
 
 ## Installing & testing instructions
