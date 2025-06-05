@@ -13,7 +13,7 @@ With this contract you can create a delivery request worth an amount of tokens b
 </p>
 
 ## Related repositories
-- Figaro [CLI test tool](https://github.com/bsn-si/figaro-cli)
+- Figaro [CLI test tool](https://github.com/Boring-Software-Nation/figaro-cli)
 
 ## Design and features
 * The contract works on the principle of mutual deposit.
@@ -22,11 +22,11 @@ With this contract you can create a delivery request worth an amount of tokens b
 
 ## How to
 ### Install Prerequisites
-Please follow installation instructions provided [here](https://docs.cosmwasm.com/docs/1.0/getting-started/installation). Also we have a simple helper script to configure `wasmd` [here](https://github.com/bsn-si/figaro-cli/blob/main/common/setup.sh).
+Please follow installation instructions provided [here](https://docs.cosmwasm.com/docs/1.0/getting-started/installation). Also we have a simple helper script to configure `wasmd` [here](https://github.com/Boring-Software-Nation/figaro-cli/blob/main/common/setup.sh).
 
 ### Clone this repo
 ```
-git clone https://github.com/bsn-si/figaro-contract
+git clone https://github.com/Boring-Software-Nation/figaro-contract
 ```
 
 ### Build Contract + metadata
@@ -36,10 +36,10 @@ RUSTFLAGS='-C link-arg=-s' cargo wasm
 ```
 
 ### Example usage
-Please use our [CLI](https://github.com/bsn-si/figaro-cli) to interact with the contract, or use original `wasmd query` command.  
+Please use our [CLI](https://github.com/Boring-Software-Nation/figaro-cli) to interact with the contract, or use original `wasmd query` command.  
 
 ## Related repos
-- [Management tools with CLI](https://github.com/bsn-si/figaro-cli)
+- [Management tools with CLI](https://github.com/Boring-Software-Nation/figaro-cli)
 
 ## License
-[Apache License 2.0](https://github.com/bsn-si/figaro-contract/blob/main/LICENSE) © Bela Supernova ([bsn.si](https://bsn.si))
+[Apache License 2.0](https://github.com/Boring-Software-Nation/figaro-contract/blob/main/LICENSE) © Boring Software Nation ([bsn.si](https://bsn.si))
